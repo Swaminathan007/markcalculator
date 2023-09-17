@@ -186,14 +186,9 @@
                     counts[7]++;
                 }
             }
-            console.log(counts);
             for(let i=0;i<8;i++){
                 if(counts[i] != 0){
-                    var tr = document.createElement("tr");
-                    var td = document.createElement("td");
                     ress.appendChild(tablearr[i]);
-                    tr.appendChild(td);
-                    tablearr[i].appendChild(tr);
                 }
             }
             for(let i=0;i<8;i++){
