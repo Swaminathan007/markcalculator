@@ -41,7 +41,7 @@ document.getElementById("submit").onclick = function(){
         for(let i=0;i<students;i++){
             var mark = parseFloat(document.getElementById("m"+(i+1)).value);
             document.getElementById("m"+(i+1)).value = "";
-            markarray.push(mark/total * 100);
+            markarray.push(Math.trunc(mark/total * 100));
         }
         var length = markarray.length;
         var tablearr = []
